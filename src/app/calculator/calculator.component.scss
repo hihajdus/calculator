@@ -2,25 +2,30 @@
 	display: flex;
 	flex-direction: column;
 }
-.calculator__display {
+.display {
 	display: flex;
 	align-self: center;
 	width: 300px;
 	height: 100px;
 }
-.calculator__keypad {
+.keypad {
 	display: flex;
 	align-self: center;
 	flex-flow: wrap row;
 	width: 300px;
 }
-.keypad {
+.key {
 	position: relative;
 	cursor: pointer;
+	display: flex;
+	justify-content: center;
 	flex-flow: wrap row;
 	width: 75px;
   height: 75px;
 }
-.keypad--equal {
+.key__text {
+	align-self: center;
+}
+.key--equal {
 	flex-grow: 1;
 }
