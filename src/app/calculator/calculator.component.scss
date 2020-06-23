@@ -1,0 +1,31 @@
+.calculator {
+	display: flex;
+	flex-direction: column;
+}
+.display {
+	display: flex;
+	align-self: center;
+	width: 300px;
+	height: 100px;
+}
+.keypad {
+	display: flex;
+	align-self: center;
+	flex-flow: wrap row;
+	width: 300px;
+}
+.key {
+	position: relative;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	flex-flow: wrap row;
+	width: 75px;
+  height: 75px;
+}
+.key__text {
+	align-self: center;
+}
+.key--equal {
+	flex-grow: 1;
+}
