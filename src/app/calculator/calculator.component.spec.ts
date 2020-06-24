@@ -22,4 +22,8 @@ describe('CalculatorComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should display numbers when they are pressed', () => {
+    expect(component.append).toEqual('1');
+  })
 });
