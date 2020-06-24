@@ -1,0 +1,22 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$color-white: #ffffff;
+$color-blue-1: #6397f3;
+$color-blue-2: #4b87f1;
+$color-blue-3: #3477ef;
+$color-blue-4: #1c68ee;
+$color-green: #63cd94;
+$color-gray-1: #d4d4d4;
+$color-gray-2: #e0e0e0;
+$color-gray-3: #ededed;
+$color-gray-4: #fafafa;
+$color-pink: #d98192;
+$color-dark: #212121;
+$color-black: #000000;
+$color-gray-gradient: linear-gradient(to right, #ededed, #fafafa);

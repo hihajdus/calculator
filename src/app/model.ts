@@ -11,5 +11,5 @@ export const operations: { [index: string]: Function } = {
   "+": add,
   "-": substract,
   "/": divide,
-  "*": multiply,
+  "x": multiply,
 };

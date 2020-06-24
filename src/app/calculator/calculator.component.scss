@@ -1,26 +1,48 @@
+@import '../../variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+.container {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	background: rgb(131,58,180);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 86%, rgba(252,136,69,1) 100%);
+}
+
 .calculator {
 	display: flex;
 	flex-direction: column;
+	font-family: 'Lato', sans-serif;
+	width: 300px;
+	margin: 0 auto;
 }
 .display {
 	display: flex;
 	align-self: center;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 300px;
-	height: 100px;
+	width: 100%;
+	background-color: $color-dark;
+	border-radius: 5px 5px 0 0;
 }
 .display__equation {
 	align-self: flex-end;
+	font-size: 18px;
+	color: $color-white;
+	padding: 20px 20px 0 20px;
 }
 .display__main {
 	align-self: flex-end;
+	font-size: 50px;
+	color: $color-white;
+	padding: 0 20px 20px 20px;
 }
 .keypad {
 	display: flex;
 	align-self: center;
 	flex-flow: wrap row;
-	width: 300px;
+	font-size: 23px;
+	border-radius: 0 0 5px 5px;
 }
 .key {
 	position: relative;
@@ -29,11 +51,63 @@
 	justify-content: center;
 	flex-flow: wrap row;
 	width: 75px;
-  height: 75px;
+	height: 75px;
+	&:hover {
+		opacity: 70%;
+	}
+}
+.key__number {
+	color: $color-dark;
+	background-color: $color-gray-4;
+	background: $color-gray-gradient;
 }
 .key__text {
 	align-self: center;
+	font-weight: 400;
+	font-size: 14px;
 }
-.key--equal {
+.key--calculate {
 	flex-grow: 1;
+	color: $color-white;
+	background-color: $color-pink;
+	border-radius: 0 0 5px 0;
+}
+.key--plus {
+	color: $color-white;
+	background-color: $color-blue-4;
+
+}
+.key--minus {
+	color: $color-white;
+	background-color: $color-blue-3;
+
+}
+.key--multiply {
+	color: $color-white;
+	background-color: $color-blue-2;
+
+}
+.key--divide {
+	color: $color-white;
+	background-color: $color-blue-1;
+
+}
+.key--zero {
+	border-radius: 0 0 0 5px;
+}
+.key--comma {
+	color: $color-dark;
+	background-color: $color-gray-3;
+}
+.key--percent {
+	color: $color-dark;
+	background-color: $color-gray-1;
+}
+.key--sign {
+	color: $color-dark;
+	background-color: $color-gray-2;
+}
+.key--cancel {
+	color: $color-dark;
+	background-color: $color-gray-3;
 }
