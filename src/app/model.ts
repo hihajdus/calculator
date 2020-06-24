@@ -1,12 +1,5 @@
-export interface key {
-  type: string;
-  value: string;
-}
-
-export interface history {
+export interface operations {
   operation: Function;
-  leftNum: number;
-  rightNum: number;
 }
 
 const add: Function = (a: number, b: number): number => a + b;
