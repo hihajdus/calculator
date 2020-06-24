@@ -1,6 +1,5 @@
 import { operations } from './../model';
 import { Component } from '@angular/core';
-import { Model } from '../model';
 
 @Component({
   selector: "app-calculator",
@@ -9,12 +8,14 @@ import { Model } from '../model';
 })
 export class CalculatorComponent {
   currentValue: string;
+  history;
   previousValue;
   operatorValue;
   operatorClicked: boolean;
 
   constructor() {
     this.currentValue = '';
+    this.history = '';
     this.previousValue = null;
     this.operatorValue = null;
     this.operatorClicked = false;
@@ -30,6 +31,7 @@ export class CalculatorComponent {
 
   cancel = () => {
     this.currentValue = '';
+    this.history = '';
     this.previousValue = null;
     this.operatorValue = null;
     this.operatorClicked = false;
@@ -60,7 +62,9 @@ export class CalculatorComponent {
       this.currentValue = '';
       this.operatorClicked = false;
     }
-    this.currentValue = `${this.currentValue}${keyPress}`
+    this.currentValue = `${this.currentValue}${keyPress}`;
+    this.history = this.currentValue;
+    console.log(this.history);
   }
 
   setPrevious = () => {

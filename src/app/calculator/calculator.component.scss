@@ -5,8 +5,16 @@
 .display {
 	display: flex;
 	align-self: center;
+	flex-direction: column;
+	justify-content: space-between;
 	width: 300px;
 	height: 100px;
+}
+.display__equation {
+	align-self: flex-end;
+}
+.display__main {
+	align-self: flex-end;
 }
 .keypad {
 	display: flex;
