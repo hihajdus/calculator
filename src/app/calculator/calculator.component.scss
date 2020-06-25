@@ -1,20 +1,25 @@
 @import '../../variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
 .container {
 	display: flex;
 	align-items: center;
 	height: 100vh;
-	background: rgb(131,58,180);
-	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 86%, rgba(252,136,69,1) 100%);
+	background: $color-purple;
+	background: $color-purple-gradient;
 }
 
 .calculator {
 	display: flex;
 	flex-direction: column;
 	font-family: 'Lato', sans-serif;
-	width: 300px;
+	width: 100%;
 	margin: 0 auto;
+}
+@media (min-width: map-get($grid-breakpoints, sm)) {
+	.calculator {
+		width: 300px;
+	}
 }
 .display {
 	display: flex;
@@ -28,12 +33,14 @@
 .display__equation {
 	align-self: flex-end;
 	font-size: 18px;
-	color: $color-white;
+	font-weight: $font-regular;
+	color: $color-pink;
 	padding: 20px 20px 0 20px;
 }
 .display__main {
 	align-self: flex-end;
 	font-size: 50px;
+	font-weight: $font-light;
 	color: $color-white;
 	padding: 0 20px 20px 20px;
 }
@@ -42,6 +49,7 @@
 	align-self: center;
 	flex-flow: wrap row;
 	font-size: 23px;
+	font-weight: $font-light;
 	border-radius: 0 0 5px 5px;
 }
 .key {
@@ -50,10 +58,15 @@
 	display: flex;
 	justify-content: center;
 	flex-flow: wrap row;
-	width: 75px;
+	width: 25vw;
 	height: 75px;
 	&:hover {
 		opacity: 70%;
+	}
+}
+@media (min-width: map-get($grid-breakpoints, sm)) {
+	.key {
+		width: 75px;
 	}
 }
 .key__number {
@@ -69,7 +82,7 @@
 .key--calculate {
 	flex-grow: 1;
 	color: $color-white;
-	background-color: $color-pink;
+	background-color: $color-red;
 	border-radius: 0 0 5px 0;
 }
 .key--plus {
@@ -97,17 +110,21 @@
 }
 .key--comma {
 	color: $color-dark;
-	background-color: $color-gray-3;
+	background-color: $color-gray-4;
+	background: $color-gray-gradient;
 }
 .key--percent {
 	color: $color-dark;
 	background-color: $color-gray-1;
+	background: $color-gray-gradient;
 }
 .key--sign {
 	color: $color-dark;
 	background-color: $color-gray-2;
+	background: $color-gray-gradient;
 }
 .key--cancel {
 	color: $color-dark;
 	background-color: $color-gray-3;
+	background: $color-gray-gradient;
 }
