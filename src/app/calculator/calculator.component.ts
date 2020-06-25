@@ -40,21 +40,25 @@ export class CalculatorComponent {
   divide = () => {
     this.operatorValue = operations["/"];
     this.setPrevious();
+    this.history += `/`;
   }
 
   multiply = () => {
     this.operatorValue = operations["x"];
     this.setPrevious();
+    this.history += `x`;
   }
 
   minus = () => {
     this.operatorValue = operations["-"];
     this.setPrevious();
+    this.history += `-`;
   }
 
   plus = () => {
     this.operatorValue = operations["+"];
     this.setPrevious();
+    this.history += `+`;
   }
 
   append = (keyPress) => {
@@ -63,8 +67,7 @@ export class CalculatorComponent {
       this.operatorClicked = false;
     }
     this.currentValue = `${this.currentValue}${keyPress}`;
-    this.history = this.currentValue;
-    console.log(this.history);
+    this.history += this.currentValue;
   }
 
   setPrevious = () => {
