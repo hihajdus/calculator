@@ -18,7 +18,7 @@ npm install
 
 ## Live demo
 
-[Live demo] (https://hihajdus.github.io/calculator/)
+[Live demo](https://hihajdus.github.io/calculator/)
 
 ## Usage
 
