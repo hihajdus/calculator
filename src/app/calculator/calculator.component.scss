@@ -1,5 +1,5 @@
 @import '../../variables.scss';
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
 
 .container {
 	display: flex;
@@ -33,12 +33,14 @@
 .display__equation {
 	align-self: flex-end;
 	font-size: 18px;
-	color: $color-white;
+	font-weight: $font-regular;
+	color: $color-pink;
 	padding: 20px 20px 0 20px;
 }
 .display__main {
 	align-self: flex-end;
 	font-size: 50px;
+	font-weight: $font-light;
 	color: $color-white;
 	padding: 0 20px 20px 20px;
 }
@@ -47,6 +49,7 @@
 	align-self: center;
 	flex-flow: wrap row;
 	font-size: 23px;
+	font-weight: $font-light;
 	border-radius: 0 0 5px 5px;
 }
 .key {
@@ -79,7 +82,7 @@
 .key--calculate {
 	flex-grow: 1;
 	color: $color-white;
-	background-color: $color-pink;
+	background-color: $color-red;
 	border-radius: 0 0 5px 0;
 }
 .key--plus {
@@ -107,17 +110,21 @@
 }
 .key--comma {
 	color: $color-dark;
-	background-color: $color-gray-3;
+	background-color: $color-gray-4;
+	background: $color-gray-gradient;
 }
 .key--percent {
 	color: $color-dark;
 	background-color: $color-gray-1;
+	background: $color-gray-gradient;
 }
 .key--sign {
 	color: $color-dark;
 	background-color: $color-gray-2;
+	background: $color-gray-gradient;
 }
 .key--cancel {
 	color: $color-dark;
 	background-color: $color-gray-3;
+	background: $color-gray-gradient;
 }

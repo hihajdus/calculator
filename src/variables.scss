@@ -6,19 +6,23 @@ $grid-breakpoints: (
   xl: 1200px
 );
 
+$font-light: 300;
+$font-regular: 400;
+
 $color-white: #ffffff;
-$color-blue-1: #6397f3;
-$color-blue-2: #4b87f1;
-$color-blue-3: #3477ef;
-$color-blue-4: #1c68ee;
+$color-blue-1: #9156E1;
+$color-blue-2: #8D52DD;
+$color-blue-3: #894ED9;
+$color-blue-4: #8547D9;
 $color-green: #63cd94;
 $color-gray-1: #d4d4d4;
 $color-gray-2: #e0e0e0;
 $color-gray-3: #ededed;
-$color-gray-4: #fafafa;
+$color-gray-4: #F7F7F7;
 $color-pink: #d98192;
+$color-red: #E62F89;
 $color-purple: rgb(131,58,180);
-$color-purple-gradient: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 86%, rgba(252,136,69,1) 100%);
+$color-purple-gradient: linear-gradient(to right bottom, #9b5cd6, #c55abb, #da63a3, #e37391, #e28687);
 $color-dark: #212121;
 $color-black: #000000;
-$color-gray-gradient: linear-gradient(to right, #ededed, #fafafa);
+$color-gray-gradient: linear-gradient(to bottom right, #ededed, #fafafa);
