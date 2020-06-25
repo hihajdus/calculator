@@ -16,6 +16,10 @@ Use the npm to install
 npm install
 ```
 
+## Live demo
+
+[Live demo] (https://hihajdus.github.io/calculator/)
+
 ## Usage
 
 Click the buttons to perform the action.
